@@ -5,8 +5,8 @@ import '../utility/contants.dart';
 
 
 class IconContent extends StatelessWidget {
-  String label;
-  IconData icon;
+  final String label;
+  final IconData icon;
 
   IconContent({this.label, this.icon});
 
