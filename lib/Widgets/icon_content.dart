@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../utility/contants.dart';
 
-
-
 class IconContent extends StatelessWidget {
   final String label;
   final IconData icon;
