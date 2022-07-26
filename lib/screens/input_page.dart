@@ -223,9 +223,13 @@ class _InputPageState extends State<InputPage> {
           )),
           InkWell(
             onTap: () {
-              CalculatorBrain calc= CalculatorBrain(height: height, weight: weight);
-              Navigator.push(context, MaterialPageRoute(builder: (context){
-                return ResultPage(bmiResult: calc.calculateBMI(), resultText: calc.getResult() , interpretation: calc.getInterpretation());
+              CalculatorBrain calc =
+                  CalculatorBrain(height: height, weight: weight);
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return ResultPage(
+                    bmiResult: calc.calculateBMI(),
+                    resultText: calc.getResult(),
+                    interpretation: calc.getInterpretation());
               }));
             },
             child: Container(
